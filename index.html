@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h3>Contact Us</h3>
+      <form action="/" id="form">
+        <div class="name-field">
+          <div class="input-field">
+            <label>First Name <span class="green-color">*</span></label>
+            <input type="text" placeholder="First Name" id="firstname" />
+            <span class="error-msg">This field is required</span>
+          </div>
+
+          <div class="input-field">
+            <label>Last Name <span class="green-color">*</span></label>
+            <input type="text" placeholder="Last Name" id="lastname" />
+            <span class="error-msg">This field is required</span>
+          </div>
+        </div>
+
+        <div class="email-field">
+          <label>Email Address <span class="green-color">*</span></label>
+          <input type="text" placeholder="Email Address" id="email" />
+          <span class="error-msg">Please enter a valid email address</span>
+        </div>
+
+        <div class="query-field">
+          <label>Query Type <span class="green-color">*</span></label>
+          <div class="query-type">
+            <div class="checkbox-field" id="generalEnquiry">
+              <input type="radio" id="generalEnquiry" />
+              <label for="/">General Enquiry</label>
+            </div>
+
+            <div class="checkbox-field" id="supportRequest">
+              <input type="radio" id="supportRequest" />
+              <label for="/">Support Request</label>
+            </div>
+          </div>
+
+          <span class="error-msg">Please select a query type</span>
+        </div>
+
+        <div class="message-field">
+          <label>Message <span class="green-color">*</span></label>
+          <textarea name="Message" id="message"></textarea>
+          <span class="error-msg">This field is required</span>
+        </div>
+
+        <div class="consent-field">
+          <div>
+            <input type="checkbox" />
+            <label
+              >I consent to being contacted by the team
+              <span class="green-color">*</span></label
+            >
+          </div>
+
+          <span class="error-msg"
+            >To submit this form, please consent to being contacted</span
+          >
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <!-- <span
+      >Message Sent! Thanks for completing the form. We'll be in touch
+      soon!</span
+    > -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
