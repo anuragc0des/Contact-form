@@ -19,7 +19,7 @@
 body {
   background-color: var(--light-green);
   width: 100%;
-  height: 170vh;
+  height: 160vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,7 +137,7 @@ form .query-field {
 
 .error-msg {
   color: var(--red);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .consent-field {
@@ -160,4 +160,35 @@ form button {
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 150vh;
+  }
+
+  main {
+    min-width: 700px;
+  }
+
+  main form .name-field {
+    flex-direction: row;
+  }
+
+  .query-field .query-type {
+    flex-direction: row;
+  }
+
+  form .input-field {
+    width: 50%;
+  }
+
+  .query-type .checkbox-field {
+    border: 1px solid black;
+    width: 50%;
+  }
 }
